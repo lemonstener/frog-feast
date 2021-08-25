@@ -1,0 +1,263 @@
+.lfrog1 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/l1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lfrog2 {
+    width: 16vw;
+    height: 16vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/l2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lfrog3 {
+    width: 18vw;
+    height: 20vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/l3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lfrog4 {
+    width: 19vw;
+    height: 19vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/l4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lfrog5 {
+    width: 24vw;
+    height: 24vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/l5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lfrog6 {
+    width: 26vw;
+    height: 26vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/l6.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lfrog7 {
+    width: 26vw;
+    height: 26vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/l6.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfrog1 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/r1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfrog2 {
+    width: 16vw;
+    height: 16vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/r2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfrog3 {
+    width: 18vw;
+    height: 20vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/r3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfrog4 {
+    width: 19vw;
+    height: 19vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/r4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfrog5 {
+    width: 24vw;
+    height: 24vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/r5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfrog6 {
+    width: 26vw;
+    height: 26vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/r6.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfrog7 {
+    width: 26vw;
+    height: 26vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/r6.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lh1 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/lh1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lh2 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/lh2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lh3 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/lh3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lh4 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    right: 42.5vw;
+    bottom: 0;
+    background-image: url('images/lh3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rh1 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/rh1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rh2 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/rh2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rh3 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/rh3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rh4 {
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    left: 42.5vw;
+    bottom: 0;
+    background-image: url('images/rh3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
