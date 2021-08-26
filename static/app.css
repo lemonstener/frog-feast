@@ -1,10 +1,73 @@
+/* UI */
+
+.timercount,
+.scorecount {
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    margin-left: 7vw;
+    text-align: center;
+    font-size: 2.3rem;
+    color: green;
+    font-family: 'Rampart One', cursive;
+    font: 900;
+}
+
+.timercount {
+    top: 0;
+}
+
+.scorecount {
+    top: 6.2vh;
+}
+
+.timericon,
+.scoreicon {
+    width: 5vw;
+    height: 5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    margin: 10px;
+}
+
+.timericon {
+    background-image: url('../images/clock.png');
+}
+
+.scoreicon {
+    background-image: url('../images/score.png');
+}
+
+.heartfield {
+    width: 30vw;
+    height: 10vh;
+    position: absolute;
+    left: 35vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.heart {
+    width: 33%;
+    height: 100%;
+    background-image: url('../images/heart.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* FROG */
+
 .lfrog1 {
     width: 15vw;
     height: 15vh;
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/l1.png');
+    background-image: url('../images/l1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -16,7 +79,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/l2.png');
+    background-image: url('../images/l2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -28,7 +91,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/l3.png');
+    background-image: url('../images/l3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -40,7 +103,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/l4.png');
+    background-image: url('../images/l4.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -52,7 +115,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/l5.png');
+    background-image: url('../images/l5.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -64,7 +127,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/l6.png');
+    background-image: url('../images/l6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -76,7 +139,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/l6.png');
+    background-image: url('../images/l6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -88,7 +151,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/r1.png');
+    background-image: url('../images/r1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -100,7 +163,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/r2.png');
+    background-image: url('../images/r2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -112,7 +175,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/r3.png');
+    background-image: url('../images/r3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -124,7 +187,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/r4.png');
+    background-image: url('../images/r4.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -136,7 +199,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/r5.png');
+    background-image: url('../images/r5.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -148,7 +211,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/r6.png');
+    background-image: url('../images/r6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -160,7 +223,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/r6.png');
+    background-image: url('../images/r6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -172,7 +235,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/lh1.png');
+    background-image: url('../images/lh1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -184,7 +247,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/lh2.png');
+    background-image: url('../images/lh2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -196,7 +259,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/lh3.png');
+    background-image: url('../images/lh3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -208,7 +271,7 @@
     position: absolute;
     right: 42.5vw;
     bottom: 0;
-    background-image: url('images/lh3.png');
+    background-image: url('../images/lh3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -220,7 +283,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/rh1.png');
+    background-image: url('../images/rh1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -232,7 +295,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/rh2.png');
+    background-image: url('../images/rh2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -244,7 +307,7 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/rh3.png');
+    background-image: url('../images/rh3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -256,8 +319,31 @@
     position: absolute;
     left: 42.5vw;
     bottom: 0;
-    background-image: url('images/rh3.png');
+    background-image: url('../images/rh3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+/* BUGS */
+
+.bug {
+    width: 3vw;
+    height: 3vh;
+    position: absolute;
+    bottom: 8vh;
+    border: 1px solid black;
+}
+
+.bee {
+    background-color: yellow;
+}
+
+.fly {
+    background-color: gray;
+}
+
+.ladybug {
+    background-color: red;
 }

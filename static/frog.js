@@ -1,21 +1,16 @@
-const frog = document.querySelector('.lfrog1')
-let direction = 'l'
-let hurt = 1
-let canPlay = true
-let score = 0
-let caught = 'bee'
-
 function stickTongue() {
     canPlay = false
+    frogDirection === 'l' ? hitbox = lBox : hitbox = rBox
+    frogDirection === 'l' ? stickingOutLeft = true : stickingOutRight = true
     const pushInterval = setInterval(function() {
-        frog.className = `${direction}frog${parseInt(frog.className[5])+1}`
+        frog.className = `${frogDirection}frog${parseInt(frog.className[5])+1}`
         if (parseInt(frog.className[5]) > 6) {
             clearInterval(pushInterval)
             const pullInterval = setInterval(function() {
-                frog.className = `${direction}frog${parseInt(frog.className[5])-1}`
+                frog.className = `${frogDirection}frog${parseInt(frog.className[5])-1}`
                 if (parseInt(frog.className[5]) === 1) {
                     clearInterval(pullInterval)
-                    checkCaught()
+                    checkCaught(hitbox)
                 }
             }, 18)
         }
@@ -23,19 +18,26 @@ function stickTongue() {
 
     setTimeout(function() {
         canPlay = true
-        frog.className = `${direction}frog1`
+        stickingOutRight = false
+        stickingOutLeft = false
+        frog.className = `${frogDirection}frog1`
     }, 400)
 }
 
 function getHurt() {
     const hurtInterval = setInterval(function() {
-        frog.className = `${direction}h${hurt}`
+        frog.className = `${frogDirection}h${hurt}`
         hurt++
         if (hurt > 3) {
             clearInterval(hurtInterval)
             hurt = 1
         }
     }, 50)
+    health--
+    hearts.lastElementChild.remove()
+    if (health === 0) {
+        console.log('GAME OVER')
+    }
 }
 
 function addToScore() {
@@ -43,17 +45,26 @@ function addToScore() {
 }
 
 function turnLeft() {
-    direction = 'l'
+    frogDirection = 'l'
     frog.className = 'lfrog1'
 }
 
-function checkCaught() {
-    if (caught) { caught === 'fly' ? addToScore() : getHurt() }
-    caught = undefined
+function checkCaught(hitbox) {
+    if (hitbox.caught === 'fly') {
+        updateScore()
+    }
+    if (hitbox.caught === 'bee') {
+        getHurt()
+    }
+    if (hitbox.caught === 'ladybug') {
+        timeLeft += 20
+    }
+    lBox.caught = ''
+    rBox.caught = ''
 }
 
 function turnRight() {
-    direction = 'r'
+    frogDirection = 'r'
     frog.className = 'rfrog1'
 }
 
