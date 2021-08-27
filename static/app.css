@@ -23,20 +23,24 @@
     font-size: 2.3rem;
     font-family: 'Rampart One', cursive;
     font: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .timercount {
-    top: 0;
+    top: 1vh;
 }
 
 .scorecount {
-    top: 6.2vh;
+    top: 7vh;
 }
 
 .timericon,
 .scoreicon {
     width: 5vw;
     height: 5vh;
+    left: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -270,7 +274,27 @@
     width: 15vw;
     height: 15vh;
     right: 42.5vw;
-    background-image: url('../images/lh3.png');
+    background-image: url('../images/lh4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lh5 {
+    width: 15vw;
+    height: 15vh;
+    right: 42.5vw;
+    background-image: url('../images/lh5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lh6 {
+    width: 15vw;
+    height: 15vh;
+    right: 42.5vw;
+    background-image: url('../images/lh6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -309,8 +333,28 @@
 .rh4 {
     width: 15vw;
     height: 15vh;
-    left: 42.5vw;
-    background-image: url('../images/rh3.png');
+    right: 42.5vw;
+    background-image: url('../images/rh4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rh5 {
+    width: 15vw;
+    height: 15vh;
+    right: 42.5vw;
+    background-image: url('../images/rh5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rh6 {
+    width: 15vw;
+    height: 15vh;
+    right: 42.5vw;
+    background-image: url('../images/rh6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -496,6 +540,49 @@
     background-size: contain;
 }
 
+.lpuffer1 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    background-image: url('../images/lpuffer1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lpuffer2 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lpuffer2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lpuffer3 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lpuffer3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lpuffer4 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lpuffer3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .rpuffer1 {
     width: 10vw;
     height: 10vh;
@@ -537,4 +624,43 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+/* SCORE ANIMATION */
+
+.result {
+    position: absolute;
+    bottom: 52vh;
+    left: 46vw;
+    width: 3vw;
+    height: 3vh;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Rampart One', cursive;
+}
+
+
+/* GAME OVER SCREEN */
+
+.game-over {
+    width: 30vw;
+    height: 60vh;
+    background-color: RGBA(255, 255, 255, .9);
+    border-radius: 8px;
+    position: absolute;
+    margin-left: 35vw;
+    margin-top: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: green;
+    font-family: 'Rampart One', cursive;
+}
+
+.reset-btn {
+    font-size: 3rem;
+    cursor: pointer;
 }

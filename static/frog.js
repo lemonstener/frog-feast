@@ -2,6 +2,7 @@ function stickTongue() {
     canPlay = false
     frogDirection === 'l' ? hitbox = lBox : hitbox = rBox
     frogDirection === 'l' ? stickingOutLeft = true : stickingOutRight = true
+    frog.className = `${frogDirection}frog1}`
     const pushInterval = setInterval(function() {
         frog.className = `${frogDirection}frog${parseInt(frog.className[5])+1}`
         if (parseInt(frog.className[5]) > 6) {
@@ -21,23 +22,28 @@ function stickTongue() {
         stickingOutRight = false
         stickingOutLeft = false
         frog.className = `${frogDirection}frog1`
-    }, 400)
+    }, 300)
 }
 
 function getHurt() {
+    health--
+    hearts.lastElementChild.remove()
     const hurtInterval = setInterval(function() {
         frog.className = `${frogDirection}h${hurt}`
         hurt++
         if (hurt > 3) {
-            clearInterval(hurtInterval)
-            hurt = 1
+            if (health === 0) {
+                frog.className = `${frogDirection}h${hurt}`
+                if (hurt === 7) {
+                    clearInterval(hurtInterval)
+                    gameOver()
+                }
+            } else {
+                clearInterval(hurtInterval)
+                hurt = 1
+            }
         }
     }, 50)
-    health--
-    hearts.lastElementChild.remove()
-    if (health === 0) {
-        console.log('GAME OVER')
-    }
 }
 
 function turnLeft() {
