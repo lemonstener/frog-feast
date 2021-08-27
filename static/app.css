@@ -1,3 +1,16 @@
+.container {
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
 /* UI */
 
 .timercount,
@@ -5,10 +18,9 @@
     width: 5vw;
     height: 5vh;
     position: absolute;
-    margin-left: 7vw;
+    margin-left: 6vw;
     text-align: center;
     font-size: 2.3rem;
-    color: green;
     font-family: 'Rampart One', cursive;
     font: 900;
 }
@@ -59,14 +71,32 @@
 }
 
 
-/* FROG */
+/* LILYPAD */
+
+.lilypad {
+    position: absolute;
+    bottom: 24vh;
+    right: 42.5vw;
+    width: 16vw;
+    height: 16vh;
+    background-image: url('../images/lilypad.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* FROG FRAMES */
+
+#frog {
+    bottom: 30vh;
+    position: absolute;
+}
 
 .lfrog1 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/l1.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -76,9 +106,7 @@
 .lfrog2 {
     width: 16vw;
     height: 16vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/l2.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -88,9 +116,7 @@
 .lfrog3 {
     width: 18vw;
     height: 20vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/l3.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -100,9 +126,7 @@
 .lfrog4 {
     width: 19vw;
     height: 19vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/l4.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -112,9 +136,7 @@
 .lfrog5 {
     width: 24vw;
     height: 24vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/l5.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -124,9 +146,7 @@
 .lfrog6 {
     width: 26vw;
     height: 26vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/l6.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -136,9 +156,7 @@
 .lfrog7 {
     width: 26vw;
     height: 26vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/l6.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -148,9 +166,7 @@
 .rfrog1 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/r1.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -160,9 +176,7 @@
 .rfrog2 {
     width: 16vw;
     height: 16vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/r2.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -172,9 +186,7 @@
 .rfrog3 {
     width: 18vw;
     height: 20vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/r3.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -184,9 +196,7 @@
 .rfrog4 {
     width: 19vw;
     height: 19vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/r4.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -196,9 +206,7 @@
 .rfrog5 {
     width: 24vw;
     height: 24vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/r5.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -208,9 +216,7 @@
 .rfrog6 {
     width: 26vw;
     height: 26vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/r6.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -220,21 +226,20 @@
 .rfrog7 {
     width: 26vw;
     height: 26vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/r6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+
+/* FROG DAMAGE FRAMES */
+
 .lh1 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/lh1.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -244,9 +249,7 @@
 .lh2 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/lh2.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -256,9 +259,7 @@
 .lh3 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/lh3.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -268,9 +269,7 @@
 .lh4 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     right: 42.5vw;
-    bottom: 0;
     background-image: url('../images/lh3.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -280,9 +279,7 @@
 .rh1 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/rh1.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -292,9 +289,7 @@
 .rh2 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/rh2.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -304,9 +299,7 @@
 .rh3 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/rh3.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -316,9 +309,7 @@
 .rh4 {
     width: 15vw;
     height: 15vh;
-    position: absolute;
     left: 42.5vw;
-    bottom: 0;
     background-image: url('../images/rh3.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -328,22 +319,222 @@
 
 /* BUGS */
 
-.bug {
-    width: 3vw;
-    height: 3vh;
+#bug {
     position: absolute;
-    bottom: 8vh;
-    border: 1px solid black;
+    z-index: 2;
 }
 
-.bee {
-    background-color: yellow;
+.lfly1 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    background-image: url('../images/lfly1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.fly {
-    background-color: gray;
+.lfly2 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lfly2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.ladybug {
-    background-color: red;
+.lfly3 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lfly3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lfly4 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lfly3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfly1 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    background-image: url('../images/rfly1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfly2 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rfly2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfly3 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rfly3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rfly4 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rfly3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lbee1 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    background-image: url('../images/lbee1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lbee2 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lbee2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lbee3 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lbee3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lbee4 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/lbee3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rbee1 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    background-image: url('../images/rbee1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rbee2 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rbee2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rbee3 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rbee3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rbee4 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rbee3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rpuffer1 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    background-image: url('../images/rpuffer1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rpuffer2 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rpuffer2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rpuffer3 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rpuffer3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rpuffer4 {
+    width: 10vw;
+    height: 10vh;
+    bottom: 34vh;
+    position: absolute;
+    background-image: url('../images/rpuffer3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

@@ -40,25 +40,20 @@ function getHurt() {
     }
 }
 
-function addToScore() {
-    score += 5
-}
-
 function turnLeft() {
     frogDirection = 'l'
     frog.className = 'lfrog1'
 }
 
 function checkCaught(hitbox) {
-    if (hitbox.caught === 'fly') {
-        updateScore()
-    }
+    if (hitbox.caught === '') { return }
     if (hitbox.caught === 'bee') {
         getHurt()
     }
-    if (hitbox.caught === 'ladybug') {
-        timeLeft += 20
+    if (hitbox.caught === 'puffer') {
+        timeLeft += 10
     }
+    updateScore(hitbox.caught)
     lBox.caught = ''
     rBox.caught = ''
 }
