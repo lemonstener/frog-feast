@@ -83,3 +83,5 @@ function flashResult(bug) {
         }
     }, 25);
 }
+
+createBug()
