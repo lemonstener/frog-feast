@@ -37,7 +37,7 @@ function createBug() {
     if (trajectory === 'r') {
         bug.style.left = '100vw'
     }
-    const random = Math.floor((Math.random() * 30) + 10)
+    const random = Math.floor((Math.random() * 20) + 10)
     const animateInterval = setInterval(function() {
         let current = parseInt(bug.className[bug.className.length - 1])
         if (current > 3) {
