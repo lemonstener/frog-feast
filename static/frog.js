@@ -1,14 +1,23 @@
+const p = {
+    direction: 'l',
+    stickingOutLeft: false,
+    stickingOutRight: false,
+    canPlay: true,
+    health: 3,
+    gameOver: false
+}
+
 function stickTongue() {
-    canPlay = false
-    frogDirection === 'l' ? hitbox = lBox : hitbox = rBox
-    frogDirection === 'l' ? stickingOutLeft = true : stickingOutRight = true
-    frog.className = `${frogDirection}frog1}`
+    p.canPlay = false
+    p.direction === 'l' ? hitbox = lBox : hitbox = rBox
+    p.direction === 'l' ? p.stickingOutLeft = true : p.stickingOutRight = true
+    frog.className = `${p.direction}frog1}`
     const pushInterval = setInterval(function() {
-        frog.className = `${frogDirection}frog${parseInt(frog.className[5])+1}`
+        frog.className = `${p.direction}frog${parseInt(frog.className[5])+1}`
         if (parseInt(frog.className[5]) > 6) {
             clearInterval(pushInterval)
             const pullInterval = setInterval(function() {
-                frog.className = `${frogDirection}frog${parseInt(frog.className[5])-1}`
+                frog.className = `${p.direction}frog${parseInt(frog.className[5])-1}`
                 if (parseInt(frog.className[5]) === 1) {
                     clearInterval(pullInterval)
                     checkCaught(hitbox)
@@ -18,37 +27,48 @@ function stickTongue() {
     }, 18)
 
     setTimeout(function() {
-        canPlay = true
-        stickingOutRight = false
-        stickingOutLeft = false
-        frog.className = `${frogDirection}frog1`
-    }, 300)
+        p.canPlay = true
+        p.stickingOutRight = false
+        p.stickingOutLeft = false
+        frog.className = `${p.direction}frog1`
+    }, 400)
 }
 
 function getHurt() {
-    health--
+    p.health -= 1
+    let hurt = 0
     hearts.lastElementChild.remove()
     const hurtInterval = setInterval(function() {
-        frog.className = `${frogDirection}h${hurt}`
         hurt++
+        frog.className = `${p.direction}h${hurt}`
         if (hurt > 3) {
-            if (health === 0) {
-                frog.className = `${frogDirection}h${hurt}`
+            if (p.health === 0) {
+                if (hurt === 4) {
+                    document.removeEventListener('keydown', control)
+                }
+                frog.className = `${p.direction}h${hurt}`
                 if (hurt === 7) {
                     clearInterval(hurtInterval)
-                    gameOver()
+                    p.gameOver = true
+                    hurt = 1
+                    endGame()
                 }
             } else {
                 clearInterval(hurtInterval)
-                hurt = 1
+                frog.className = `${p.direction}frog1`
             }
         }
     }, 50)
 }
 
 function turnLeft() {
-    frogDirection = 'l'
+    p.direction = 'l'
     frog.className = 'lfrog1'
+}
+
+function turnRight() {
+    p.direction = 'r'
+    frog.className = 'rfrog1'
 }
 
 function checkCaught(hitbox) {
@@ -64,13 +84,10 @@ function checkCaught(hitbox) {
     rBox.caught = ''
 }
 
-function turnRight() {
-    frogDirection = 'r'
-    frog.className = 'rfrog1'
-}
+
 
 function control(e) {
-    if (!canPlay) { return }
+    if (!p.canPlay) { return }
     if (e.keyCode === 32) {
         stickTongue()
     } else if (e.keyCode === 37) {
@@ -79,5 +96,3 @@ function control(e) {
         turnRight()
     }
 }
-
-document.addEventListener('keydown', control)

@@ -1,5 +1,5 @@
 .container {
-    background-image: url('../images/background.png');
+    background-image: url('../images/wallpaper.gif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,12 +20,13 @@
     position: absolute;
     margin-left: 6vw;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: 'Rampart One', cursive;
     font: 900;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: gold;
 }
 
 .timercount {
@@ -93,6 +94,7 @@
 /* FROG FRAMES */
 
 #frog {
+    z-index: 1;
     bottom: 30vh;
     position: absolute;
 }
@@ -366,6 +368,7 @@
 #bug {
     position: absolute;
     z-index: 2;
+    width: 15vw;
 }
 
 .lfly1 {
@@ -650,17 +653,18 @@
     border-radius: 8px;
     position: absolute;
     margin-left: 35vw;
-    margin-top: 20vh;
+    margin-top: 200vh;
     text-align: center;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.5rem;
-    color: green;
     font-family: 'Rampart One', cursive;
+    transition: margin-top 1s;
 }
 
 .reset-btn {
-    font-size: 3rem;
+    font-size: 6rem;
     cursor: pointer;
+    color: green;
 }

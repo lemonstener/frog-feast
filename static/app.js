@@ -1,16 +1,3 @@
-const container = document.querySelector('.container')
-const frog = document.querySelector('.lfrog1')
-const timer = document.querySelector('.timercount')
-const scoreCount = document.querySelector('.scorecount')
-const hearts = document.querySelector('.heartfield')
-const timerField = document.querySelector('.timerfield')
-const scoreField = document.querySelector('.scorefield')
-const heartField = document.querySelector('.heartfield')
-frog.style.zIndex = 1
-
-const lHitBox = document.querySelector('.lhitbox')
-const rHitBox = document.querySelector('.rhitbox')
-
 const lBox = {
     caught: ''
 }
@@ -19,102 +6,109 @@ const rBox = {
     caught: ''
 }
 
-const bugDirection = ['l', 'r']
-const bugTypes = ['bee', 'puffer', 'puffer', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly']
-const bugInfo = {
-    fly: {
-        string: '+100',
-        color: 'black'
-    },
-    bee: {
-        string: '-500',
-        color: 'red'
-    },
-    puffer: {
-        string: '+1000',
-        color: 'blue'
-    }
-}
-let frogDirection = 'l'
-let stickingOutLeft = false
-let stickingOutRight = false
-let hurt = 1
-let canPlay = true
 let score = 0
-let timeLeft = 60
-let health = 3
+let timeLeft = 59
 
-scoreCount.innerHTML = `<span>${score}</span>`
+
+scoreCount.innerHTML = `${score}`
 
 function updateScore(bug) {
-    score += parseInt(bugInfo[bug].string)
+    score += parseInt(e.bugInfo[bug].string)
     if (score < 0) {
         score = 0
     }
-    scoreCount.innerHTML = `<span>${score}</span>`
+    scoreCount.innerHTML = `${score}`
 }
 
-const timerInterval = setInterval(function() {
-    timer.innerHTML = `<span>${timeLeft}</span>`
-    timeLeft--
-    if (timeLeft < 0) {
-        clearInterval(timerInterval)
-        console.log('GAME OVER')
-    }
-}, 1000)
+function startTimer() {
+    const timerInterval = setInterval(function() {
+        if (p.gameOver) {
+            clearInterval(timerInterval)
+        }
+        timer.innerText = `${timeLeft}`
+        timeLeft--
 
-const difficultyInterval = setInterval(increaseDifficulty, 20000)
+        if (timeLeft < -1) {
+            timer.innerText = 60
+            p.gameOver = true
+            clearInterval(timerInterval)
+            endGame()
+        }
+    }, 1000)
+}
 
 function increaseDifficulty() {
-    const count = bugTypes.filter(item => item === 'fly').length
-    if (count === 2) {
-        clearInterval(difficultyInterval)
-    }
-    bugTypes.pop()
-    bugTypes.unshift('bee')
+    const difficultyInterval = setInterval(function() {
+        if (p.gameOver) {
+            clearInterval(difficultyInterval)
+        }
+        const count = e.bugTypes.filter(item => item === 'fly').length
+        if (count === 2) {
+            clearInterval(difficultyInterval)
+        }
+        e.bugTypes.pop()
+        e.bugTypes.unshift('bee')
+    }, 10000)
 }
 
-function gameOver() {
-    timerField.hidden = true
-    scoreField.hidden = true
+function startGame() {
+    document.addEventListener('keydown', control)
+    startTimer()
+    createBug()
+    increaseDifficulty()
+}
 
-    const div = document.createElement('div')
-    div.className = 'game-over'
+function endGame() {
+    p.gameOver = true
+    heartField.innerHTML = ''
+    scoreField.hidden = true
+    timerField.hidden = true
+    frog.hidden = true
+
+    const gameOverPanel = document.createElement('div')
+    gameOverPanel.className = 'game-over'
 
     const text = document.createElement('div')
-    text.innerHTML = `Final score: ${score} <br> (but you could do better).`
-    div.append(text)
+    text.innerHTML = `Final score: ${score} <br> (but you could do better)`
 
-    const btn = document.createElement('span')
-    btn.innerHTML = ' <i class="fa fa-refresh fa-spin"></i>'
-    btn.className = 'reset-btn'
-    btn.addEventListener('click', reset)
-    div.append(btn)
+    const button = document.createElement('span')
+    button.innerHTML = '<i class="fa fa-refresh fa-spin"></i>'
+    button.className = 'reset-btn'
 
-    container.append(div)
+    gameOverPanel.append(text, button)
+    container.append(gameOverPanel)
+
+    button.addEventListener('click', function() {
+        gameOverPanel.style.marginTop = '200vh'
+        gameOverPanel.remove()
+        frog.className = `${p.direction}frog1`
+        heartField.innerHTML = `
+        <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        `
+        scoreField.hidden = false
+        timerField.hidden = false
+        score = 0
+        scoreCount.innerHTML = `${score}`
+        timer.innerText = `60`
+        timeLeft = 59
+        frog.hidden = false
+        p.gameOver = false
+        p.health = 3
+        p.stickingOutLeft = false
+        p.stickingOutRight = false
+        p.canPlay = true
+        p.health = 3
+        gameOver = false
+        e.bugTypes = ['bee', 'puffer', 'puffer', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly']
+        startGame()
+    })
+
+    setTimeout(function() {
+        gameOverPanel.style.marginTop = '20vh'
+    }, 300)
+
 }
 
-function reset() {
-    const gameOverPanel = document.querySelector('.game-over')
-    gameOverPanel.remove()
-    frogDirection = 'l'
-    stickingOutLeft = false
-    stickingOutRight = false
-    hurt = 1
-    canPlay = true
-    score = 0
-    timeLeft = 60
-    health = 3
-
-    timeLeft.innerText = '0'
-
-    for (let i = 0; i < 3; i++) {
-        const heart = document.createElement('div')
-        heart.className = 'heart'
-        heartField.append(heart)
-    }
-
-    timerField.hidden = false
-    scoreField.hidden = false
-    frog.className = 'lfrog1'
-}
+startGame()
