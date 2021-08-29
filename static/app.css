@@ -10,6 +10,23 @@
     width: 100vw;
 }
 
+.left-screen,
+.right-screen {
+    width: 40vw;
+    height: 100%;
+    z-index: 3;
+}
+
+.left-screen {
+    position: absolute;
+    left: 0;
+}
+
+.right-screen {
+    position: absolute;
+    right: 0;
+}
+
 
 /* UI */
 

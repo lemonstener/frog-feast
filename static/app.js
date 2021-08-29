@@ -56,6 +56,8 @@ function startGame() {
     startTimer()
     createBug()
     increaseDifficulty()
+    leftHalf.addEventListener('click', turnLeft)
+    rightHalf.addEventListener('click', turnRight)
 }
 
 function endGame() {
@@ -64,6 +66,9 @@ function endGame() {
     scoreField.hidden = true
     timerField.hidden = true
     frog.hidden = true
+
+    leftHalf.removeEventListener('click', turnLeft)
+    rightHalf.removeEventListener('click', turnRight)
 
     const gameOverPanel = document.createElement('div')
     gameOverPanel.className = 'game-over'

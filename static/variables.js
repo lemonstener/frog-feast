@@ -7,6 +7,8 @@ const scoreCount = document.querySelector('.scorecount')
 const timerField = document.querySelector('.timerfield')
 const scoreField = document.querySelector('.scorefield')
 const heartField = document.querySelector('.heartfield')
+const leftHalf = document.querySelector('.left-screen')
+const rightHalf = document.querySelector('.right-screen')
 
 // GAME OBJECTS
 
