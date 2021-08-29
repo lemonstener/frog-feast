@@ -9,6 +9,7 @@ const scoreField = document.querySelector('.scorefield')
 const heartField = document.querySelector('.heartfield')
 const leftHalf = document.querySelector('.left-screen')
 const rightHalf = document.querySelector('.right-screen')
+const speaker = document.querySelector('.speaker')
 
 // GAME OBJECTS
 

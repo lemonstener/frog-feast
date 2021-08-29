@@ -20,6 +20,8 @@ function updateScore(bug) {
     scoreCount.innerHTML = `${score}`
 }
 
+speaker.addEventListener('click', music)
+
 function startTimer() {
     const timerInterval = setInterval(function() {
         if (timeLeft < 11) {
