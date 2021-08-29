@@ -60,7 +60,6 @@ function endGame() {
     scoreField.hidden = true
     timerField.hidden = true
     frog.hidden = true
-    speaker.hidden = true
 
     leftHalf.removeEventListener('click', turnLeft)
     rightHalf.removeEventListener('click', turnRight)
@@ -101,7 +100,6 @@ function endGame() {
         p.canPlay = true
         p.health = 3
         gameOver = false
-        speaker.hidden = false
         startGame()
     })
 
@@ -111,4 +109,4 @@ function endGame() {
 
 }
 
-startGame()
+// startGame()

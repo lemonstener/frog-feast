@@ -98,5 +98,3 @@ function control(e) {
         turnRight()
     }
 }
-
-document.addEventListener('keydown', control)

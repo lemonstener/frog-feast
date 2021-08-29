@@ -52,7 +52,7 @@
 }
 
 .scorecount {
-    top: 7vh;
+    top: 8vh;
 }
 
 .timericon,
@@ -784,38 +784,126 @@
 
 /* MEDIA QUERRIES */
 
-@media only screen and (max-width: 1400px) {
-    #frog {
-        bottom: 28vh;
-    }
-    #bug {
-        bottom: 32vh;
-    }
-    .scoreicon,
-    .timericon {
+@media (max-width: 400px) {
+    .timericon,
+    .scoreicon {
         width: 8vw;
         height: 8vh;
     }
-    .scorecount,
-    .timercount {
+    .game-over {
+        font-size: 1rem;
+        width: 50%;
+        right: 25vw;
+    }
+    .reset-btn {
+        font-size: 2.5rem;
+    }
+    .scorecount {
         left: 10vw;
-        font-size: 1.5rem;
+        top: 12vh;
     }
     .timercount {
+        left: 5vw;
+        top: 4vh;
+    }
+}
+
+@media (max-width: 540px) {
+    #frog {
+        bottom: 26vh;
+    }
+    #bug {
+        bottom: 30vh;
+    }
+    .timericon,
+    .scoreicon {
+        width: 8vw;
+        height: 8vh;
+    }
+    .game-over {
+        font-size: 1rem;
+        width: 50%;
+        right: 25vw;
+    }
+    .reset-btn {
+        font-size: 2.5rem;
+    }
+    .scoreicon {
+        background-image: url('../images/rfly1.png');
+    }
+    .scorecount {
+        left: 10vw;
+        top: 12vh;
+    }
+    .timercount {
+        left: 10vw;
+        top: 3vh;
+    }
+}
+
+@media (max-width: 740px) {
+    .timericon,
+    .scoreicon {
+        width: 8vw;
+        height: 8vh;
+    }
+    .game-over {
+        font-size: 1rem;
+        width: 50%;
+        right: 25vw;
+    }
+    .reset-btn {
+        font-size: 2.5rem;
+    }
+    .scoreicon {
+        background-image: url('../images/rfly1.png');
+    }
+    .scorecount {
+        left: 5vw;
+        top: 16vh;
+    }
+    .timercount {
+        left: 5vw;
+        top: 6vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .timericon,
+    .scoreicon {
+        width: 8vw;
+        height: 8vh;
+    }
+    .timercount {
+        left: 8vw;
         top: 3vh;
     }
     .scorecount {
-        top: 12vh;
+        left: 8vw;
+        top: 11.5vh;
     }
     .game-over {
         width: 40vw;
-        font-size: 1rem;
         right: 30vw;
     }
-    .reset-btn {
-        font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+    .timericon,
+    .scoreicon {
+        width: 8vw;
+        height: 8vh;
     }
-    .speaker {
-        top: 30vh;
+    .timercount {
+        left: 8vw;
+        top: 3vh;
+    }
+    .scorecount {
+        left: 8vw;
+        top: 11.5vh;
+    }
+    .game-over {
+        width: 40vw;
+        right: 30vw;
     }
 }
