@@ -15,3 +15,7 @@ const rightHalf = document.querySelector('.right-screen')
 const frog = document.querySelector('.lfrog1')
 const lHitBox = document.querySelector('.lhitbox')
 const rHitBox = document.querySelector('.rhitbox')
+
+// OTHER
+
+const song = document.querySelector('audio')

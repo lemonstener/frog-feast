@@ -1,6 +1,6 @@
 const e = {
     bugDirection: ['l', 'r'],
-    bugTypes: ['bee', 'puffer', 'puffer', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly'],
+    bugTypes: ['bee', 'bee', 'puffer', 'fly', 'fly', 'fly', 'fly', 'fly'],
     bugInfo: {
         fly: {
             string: '+100',
@@ -15,7 +15,8 @@ const e = {
             color: 'gold'
         },
         bugActive: false
-    }
+    },
+    speed: [10, 15, 15, 20, 20, 20, 20, 25, 30, 40]
 }
 
 function createBug() {
@@ -32,6 +33,7 @@ function createBug() {
     container.append(bug)
     let position
     const trajectory = direction[Math.floor(Math.random() * direction.length)]
+    const bugSpeed = e.speed[Math.floor(Math.random() * e.speed.length)]
     bug.className = `${trajectory}${bug.getAttribute('type')}1`
     trajectory === 'l' ? position = 0 : position = 100;
     if (trajectory === 'r') {
@@ -45,8 +47,8 @@ function createBug() {
         } else {
             bug.className = `${trajectory}${bug.getAttribute('type')}${current + 1}`
         }
-    }, 50)
-    const flight = setInterval(move, random)
+    }, 80)
+    const flight = setInterval(move, bugSpeed)
 
     function move() {
         if (p.gameOver) {

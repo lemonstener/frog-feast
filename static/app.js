@@ -7,7 +7,7 @@ const rBox = {
 }
 
 let score = 0
-let timeLeft = 59
+let timeLeft = 12
 
 
 scoreCount.innerHTML = `${score}`
@@ -22,13 +22,20 @@ function updateScore(bug) {
 
 function startTimer() {
     const timerInterval = setInterval(function() {
+        if (timeLeft < 11) {
+            timer.classList.add('heartbeat')
+        } else {
+            timer.classList.remove('heartbeat')
+        }
         if (p.gameOver) {
+            timer.classList.remove('pulsate')
             clearInterval(timerInterval)
         }
         timer.innerText = `${timeLeft}`
         timeLeft--
 
         if (timeLeft < -1) {
+            timer.classList.remove('pulsate')
             timer.innerText = 60
             p.gameOver = true
             clearInterval(timerInterval)
@@ -37,25 +44,10 @@ function startTimer() {
     }, 1000)
 }
 
-function increaseDifficulty() {
-    const difficultyInterval = setInterval(function() {
-        if (p.gameOver) {
-            clearInterval(difficultyInterval)
-        }
-        const count = e.bugTypes.filter(item => item === 'fly').length
-        if (count === 2) {
-            clearInterval(difficultyInterval)
-        }
-        e.bugTypes.pop()
-        e.bugTypes.unshift('bee')
-    }, 10000)
-}
-
 function startGame() {
     document.addEventListener('keydown', control)
     startTimer()
     createBug()
-    increaseDifficulty()
     leftHalf.addEventListener('click', turnLeft)
     rightHalf.addEventListener('click', turnRight)
 }
@@ -106,7 +98,6 @@ function endGame() {
         p.canPlay = true
         p.health = 3
         gameOver = false
-        e.bugTypes = ['bee', 'puffer', 'puffer', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly', 'fly']
         startGame()
     })
 
@@ -117,3 +108,4 @@ function endGame() {
 }
 
 startGame()
+song.play()
