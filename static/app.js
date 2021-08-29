@@ -7,7 +7,7 @@ const rBox = {
 }
 
 let score = 0
-let timeLeft = 12
+let timeLeft = 29
 
 
 scoreCount.innerHTML = `${score}`
@@ -89,7 +89,7 @@ function endGame() {
         score = 0
         scoreCount.innerHTML = `${score}`
         timer.innerText = `60`
-        timeLeft = 59
+        timeLeft = 29
         frog.hidden = false
         p.gameOver = false
         p.health = 3
@@ -108,4 +108,3 @@ function endGame() {
 }
 
 startGame()
-song.play()

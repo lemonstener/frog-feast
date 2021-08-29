@@ -7,7 +7,7 @@ const e = {
             color: 'gold'
         },
         bee: {
-            string: '-500',
+            string: '-100',
             color: 'red'
         },
         puffer: {

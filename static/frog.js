@@ -91,7 +91,7 @@ function checkCaught(hitbox) {
 function control(e) {
     if (!p.canPlay) { return }
     if (e.keyCode === 32) {
-        stickTongue()
+        song.play()
     } else if (e.keyCode === 37) {
         turnLeft()
     } else if (e.keyCode === 39) {
