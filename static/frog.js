@@ -22,16 +22,16 @@ function stickTongue() {
                     clearInterval(pullInterval)
                     checkCaught(hitbox)
                 }
-            }, 18)
+            }, 15)
         }
-    }, 18)
+    }, 15)
 
     setTimeout(function() {
         p.canPlay = true
         p.stickingOutRight = false
         p.stickingOutLeft = false
         frog.className = `${p.direction}frog1`
-    }, 400)
+    }, 200)
 }
 
 function getHurt() {
@@ -58,17 +58,19 @@ function getHurt() {
                 frog.className = `${p.direction}frog1`
             }
         }
-    }, 50)
+    }, 30)
 }
 
 function turnLeft() {
     p.direction = 'l'
     frog.className = 'lfrog1'
+    stickTongue()
 }
 
 function turnRight() {
     p.direction = 'r'
     frog.className = 'rfrog1'
+    stickTongue()
 }
 
 function checkCaught(hitbox) {
@@ -77,7 +79,7 @@ function checkCaught(hitbox) {
         getHurt()
     }
     if (hitbox.caught === 'puffer') {
-        timeLeft += 10
+        timeLeft += 5
     }
     updateScore(hitbox.caught)
     lBox.caught = ''
