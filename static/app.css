@@ -8,6 +8,10 @@
     background-size: cover;
 }
 
+h1 {
+    color: gold;
+}
+
 .landing-page {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
@@ -939,6 +943,12 @@
 
 
 /* MEDIA QUERRIES */
+
+@media only screen and (max-width: 400px) {
+    .about {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 1400px) {
     #frog {

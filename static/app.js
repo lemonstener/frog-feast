@@ -81,8 +81,9 @@ function startGame() {
 }
 
 function endGame() {
+    const highScore = localStorage.getItem('highScore') || 0
     let newRecord = false
-    if (score > localStorage.getItem('highScore')) {
+    if (score > highScore) {
         localStorage.setItem('highScore', score)
         newRecord = true
     }
@@ -139,7 +140,7 @@ function showLandingPage() {
     landingPage.innerHTML = `
     <div>
             <h1>FROG FEAST</h1>
-            <h5><i>A.K.A the "What if the ATARI 2600 had 16bit graphics" game</i></h5>
+            <h3><i>A.K.A the "What if the ATARI 2600 had 16bit graphics" game</i></h2>
             <p>Welcome to Frog Feast ! Eat some bugs, get a high score and then do it all over again!<br> Watch out for bees though! Eat 3 bees and it's game over! <br> Oh yeah, you have a time limit too. <br> Press
                 <span style="color:blue">left</span> or
                 <span style="color:blue">right</span> on the keyboard to stick your tongue out in that direction (or tap the screen on mobile).<br> Press the <span style="color:blue">spacebar</span> to toggle the music on / off (or click on the
@@ -147,6 +148,7 @@ function showLandingPage() {
                     style="color:orange">speaker</span>).
                     <br>
                     <span style="color:red">Flies</span> will get you 100 points, <span style="color:purple">Fluffly bugs</span> are worth 1000 and extend your timer but the <span style="color:gold">Bees</span> will hurt you.</p>
+                    <a href="https://www.bensound.com/royalty-free-music/2">Music by Bensound</a>
         </div>
 
         <div class="controls">
@@ -155,11 +157,11 @@ function showLandingPage() {
             <div class="rdemo-frog"></div>
         </div>
         <div class="enemies">
-            <div><span style="color:red">Fly</span></div>
+            <div style="margin-top:20px"><span style="color:red;">Fly</span></div>
             <div class="demo-fly"></div>
-            <div><span style="color:gold">Bee</span></div>
+            <div style="margin-top:20px"><span style="color:gold">Bee</span></div>
             <div class="demo-bee"></div>
-            <div><span style="color:purple">Fluffy Bug</span></div>
+            <div style="margin-top:20px"><span style="color:purple">Fluffy Bug</span></div>
             <div class="demo-puffer"></div>
         </div>
 
