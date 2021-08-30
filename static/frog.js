@@ -35,6 +35,7 @@ function stickTongue() {
 }
 
 function getHurt() {
+    p.canPlay = false
     p.health -= 1
     let hurt = 0
     hearts.lastElementChild.remove()
