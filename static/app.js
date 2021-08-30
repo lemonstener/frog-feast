@@ -166,6 +166,14 @@ function showLandingPage() {
         </div>
 
         <div class="start"></div>
+        <div class="mob-links links">
+                        <a href="https://www.linkedin.com/in/deyan-vasilev/">
+                            <div class="linkedin"></div>
+                        </a>
+                        <a href="https://github.com/lemonstener">
+                            <div class="github"></div>
+                        </a>
+        </div>
         <div class="about">
             <div class="profile"></div>
             <div class="info">
@@ -182,6 +190,7 @@ function showLandingPage() {
                             <div class="github"></div>
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>

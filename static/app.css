@@ -157,6 +157,10 @@ h1 {
     background-image: url('../images/github.png');
 }
 
+.mob-links {
+    visibility: hidden;
+}
+
 
 /* MOBILE SUPPORT HITBOXES */
 
@@ -947,6 +951,12 @@ h1 {
 @media only screen and (max-width: 400px) {
     .about {
         display: none;
+    }
+    .mob-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        visibility: visible;
     }
 }
 
