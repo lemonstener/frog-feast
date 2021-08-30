@@ -47,6 +47,29 @@ function startTimer() {
 }
 
 function startGame() {
+    frog.className = `${p.direction}frog1`
+    heartField.innerHTML = `
+        <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        `
+    scoreField.hidden = false
+    timerField.hidden = false
+    score = 0
+    scoreCount.innerHTML = `${score}`
+    timer.innerText = `30`
+    timeLeft = 29
+    frog.hidden = false
+    p.gameOver = false
+    p.health = 3
+    p.stickingOutLeft = false
+    p.stickingOutRight = false
+    p.canPlay = true
+    p.health = 3
+    gameOver = false
+    speaker.hidden = false
+    landingPage.hidden = true
+    container.hidden = false
     document.addEventListener('keydown', control)
     startTimer()
     createBug()
@@ -55,6 +78,11 @@ function startGame() {
 }
 
 function endGame() {
+    let newRecord = false
+    if (score > localStorage.getItem('highScore')) {
+        localStorage.setItem('highScore', score)
+        newRecord = true
+    }
     p.gameOver = true
     heartField.innerHTML = ''
     scoreField.hidden = true
@@ -68,41 +96,34 @@ function endGame() {
     const gameOverPanel = document.createElement('div')
     gameOverPanel.className = 'game-over'
 
+    const backBTN = document.createElement('div')
+    backBTN.className = 'back-btn'
+
     const text = document.createElement('div')
-    text.innerHTML = `Final score: ${score} <br> (but you could do better)`
+    if (newRecord) {
+        text.innerHTML = `New high score!!! <br> ${score}`
+    } else {
+        text.innerHTML = `Final score: ${score} <br> (but you could do better)`
+    }
 
-    const button = document.createElement('span')
-    button.innerHTML = '<i class="fa fa-refresh fa-spin"></i>'
-    button.className = 'reset-btn'
 
-    gameOverPanel.append(text, button)
+    const restartBTN = document.createElement('span')
+    restartBTN.innerHTML = '<i class="fa fa-refresh fa-spin"></i>'
+    restartBTN.className = 'reset-btn'
+
+    gameOverPanel.append(backBTN, text, restartBTN)
     container.append(gameOverPanel)
 
-    button.addEventListener('click', function() {
-        gameOverPanel.style.marginTop = '200vh'
+    restartBTN.addEventListener('click', function() {
         gameOverPanel.remove()
-        frog.className = `${p.direction}frog1`
-        heartField.innerHTML = `
-        <div class="heart"></div>
-            <div class="heart"></div>
-            <div class="heart"></div>
-        `
-        scoreField.hidden = false
-        timerField.hidden = false
-        score = 0
-        scoreCount.innerHTML = `${score}`
-        timer.innerText = `60`
-        timeLeft = 29
-        frog.hidden = false
-        p.gameOver = false
-        p.health = 3
-        p.stickingOutLeft = false
-        p.stickingOutRight = false
-        p.canPlay = true
-        p.health = 3
-        gameOver = false
-        speaker.hidden = false
         startGame()
+    })
+
+    backBTN.addEventListener('click', function() {
+        gameOverPanel.remove()
+        container.hidden = true
+        if (!song.paused) { music() }
+        landingPage.hidden = false
     })
 
     setTimeout(function() {
@@ -111,4 +132,4 @@ function endGame() {
 
 }
 
-startGame()
+start.addEventListener('click', startGame)

@@ -1,5 +1,6 @@
 // UI
 
+const landingPage = document.querySelector('.landing-page')
 const container = document.querySelector('.container')
 const timer = document.querySelector('.timercount')
 const hearts = document.querySelector('.heartfield')
@@ -20,3 +21,5 @@ const rHitBox = document.querySelector('.rhitbox')
 // OTHER
 
 const song = document.querySelector('audio')
+const start = document.querySelector('.start')
+const highScore = localStorage.getItem('highScore') || 0

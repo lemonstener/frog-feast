@@ -1,3 +1,82 @@
+/* LANDING PAGE */
+
+.landing-page {
+    background-image: url('../images/rocks.gif');
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls,
+.enemies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.demo-speaker {
+    width: 7vw;
+    height: 7vh;
+    background-image: url('../images/speaker.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ldemo-frog,
+.rdemo-frog {
+    width: 10vw;
+    height: 10vh;
+    right: 42.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ldemo-frog {
+    background-image: url('../images/l6.png');
+}
+
+.rdemo-frog {
+    background-image: url('../images/r6.png');
+}
+
+.demo-fly {
+    width: 5vw;
+    height: 5vh;
+    background-image: url('../images/lfly1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.demo-bee {
+    width: 5vw;
+    height: 5vh;
+    background-image: url('../images/lbee1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.demo-puffer {
+    width: 5vw;
+    height: 5vh;
+    background-image: url('../images/lpuffer1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .container {
     background-image: url('../images/wallpaper.gif');
     background-position: center;
@@ -9,6 +88,26 @@
     height: 100vh;
     width: 100vw;
 }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.start {
+    background-image: url('../images/start.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 10vh;
+    cursor: pointer;
+    margin-left: 45vw;
+}
+
+
+/* MOBILE SUPPORT HITBOXES */
 
 .left-screen,
 .right-screen {
@@ -44,7 +143,6 @@
     justify-content: center;
     align-items: center;
     color: gold;
-    font-family: 'Architects Daughter', cursive;
 }
 
 .timercount {
@@ -686,6 +784,17 @@
     font-size: 6rem;
     cursor: pointer;
     color: green;
+}
+
+.back-btn {
+    width: 25%;
+    height: 5vh;
+    background-image: url('../images/backbtn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 37.5%;
+    cursor: pointer;
 }
 
 
