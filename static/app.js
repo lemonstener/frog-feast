@@ -47,6 +47,8 @@ function startTimer() {
 }
 
 function startGame() {
+    landingPage.innerHTML = ''
+    html.classList.remove('background')
     frog.className = `${p.direction}frog1`
     heartField.innerHTML = `
         <div class="heart"></div>
@@ -69,6 +71,7 @@ function startGame() {
     gameOver = false
     speaker.hidden = false
     landingPage.hidden = true
+    landingPage.style.right = '-9999px'
     container.hidden = false
     document.addEventListener('keydown', control)
     startTimer()
@@ -103,7 +106,7 @@ function endGame() {
     if (newRecord) {
         text.innerHTML = `New high score!!! <br> ${score}`
     } else {
-        text.innerHTML = `Final score: ${score} <br> (but you could do better)`
+        text.innerHTML = `Final score: ${score} <br> (you once did ${highScore} though)`
     }
 
 
@@ -123,7 +126,7 @@ function endGame() {
         gameOverPanel.remove()
         container.hidden = true
         if (!song.paused) { music() }
-        landingPage.hidden = false
+        showLandingPage()
     })
 
     setTimeout(function() {
@@ -132,4 +135,59 @@ function endGame() {
 
 }
 
-start.addEventListener('click', startGame)
+function showLandingPage() {
+    landingPage.innerHTML = `
+    <div>
+            <h1>FROG FEAST</h1>
+            <h5><i>A.K.A the "What if the ATARI 2600 had 16bit graphics" game</i></h5>
+            <p>Welcome to Frog Feast ! Eat some bugs, get a high score and then do it all over again!<br> Watch out for bees though! Eat 3 bees and it's game over! <br> Oh yeah, you have a time limit too. <br> Press
+                <span style="color:blue">left</span> or
+                <span style="color:blue">right</span> on the keyboard to stick your tongue out in that direction (or tap the screen on mobile).<br> Press the <span style="color:blue">spacebar</span> to toggle the music on / off (or click on the
+                <span
+                    style="color:orange">speaker</span>).
+                    <br>
+                    <span style="color:red">Flies</span> will get you 100 points, <span style="color:purple">Fluffly bugs</span> are worth 1000 and extend your timer but the <span style="color:gold">Bees</span> will hurt you.</p>
+        </div>
+
+        <div class="controls">
+            <div class="ldemo-frog"></div>
+            <div class="demo-speaker"></div>
+            <div class="rdemo-frog"></div>
+        </div>
+        <div class="enemies">
+            <div><span style="color:red">Fly</span></div>
+            <div class="demo-fly"></div>
+            <div><span style="color:gold">Bee</span></div>
+            <div class="demo-bee"></div>
+            <div><span style="color:purple">Fluffy Bug</span></div>
+            <div class="demo-puffer"></div>
+        </div>
+
+        <div class="start"></div>
+        <div class="about">
+            <div class="profile"></div>
+            <div class="info">
+                <div>
+                    <p>Hi there, my name is Deyan. This little game here is my entry for the August Mintbean Hiring Hackaton. No frameworks involved, just plain CSS and Javascript. I hope you enjoy playing it as much as I enjoyed making it.<br>
+                    <a href="https://github.com/lemonstener/frog-feast">Check it out on GitHub</a></p>
+                    
+
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/deyan-vasilev/">
+                            <div class="linkedin"></div>
+                        </a>
+                        <a href="https://github.com/lemonstener">
+                            <div class="github"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+    html.className = 'background'
+    const start = document.querySelector('.start')
+    start.addEventListener('click', startGame)
+    landingPage.hidden = false
+}
+
+showLandingPage()

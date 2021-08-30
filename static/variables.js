@@ -21,5 +21,5 @@ const rHitBox = document.querySelector('.rhitbox')
 // OTHER
 
 const song = document.querySelector('audio')
-const start = document.querySelector('.start')
 const highScore = localStorage.getItem('highScore') || 0
+const html = document.querySelector('html')

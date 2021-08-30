@@ -31,7 +31,7 @@ function stickTongue() {
         p.stickingOutRight = false
         p.stickingOutLeft = false
         frog.className = `${p.direction}frog1`
-    }, 200)
+    }, 250)
 }
 
 function getHurt() {
