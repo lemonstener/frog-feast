@@ -4,10 +4,12 @@ const p = {
     stickingOutRight: false,
     canPlay: true,
     health: 3,
-    gameOver: false
+    gameOver: false,
+    gameInProgress: false
 }
 
 function stickTongue() {
+    if (p.canPlay === false) { return }
     p.canPlay = false
     p.direction === 'l' ? hitbox = lBox : hitbox = rBox
     p.direction === 'l' ? p.stickingOutLeft = true : p.stickingOutRight = true
@@ -22,9 +24,9 @@ function stickTongue() {
                     clearInterval(pullInterval)
                     checkCaught(hitbox)
                 }
-            }, 15)
+            }, 10)
         }
-    }, 15)
+    }, 10)
 
     setTimeout(function() {
         p.canPlay = true
@@ -59,7 +61,7 @@ function getHurt() {
                 frog.className = `${p.direction}frog1`
             }
         }
-    }, 30)
+    }, 20)
 }
 
 function turnLeft() {

@@ -191,8 +191,8 @@ h1 {
     position: absolute;
     margin-left: 6vw;
     text-align: center;
-    font-size: 1.8rem;
-    font-family: 'Rampart One', cursive;
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
     font: 900;
     display: flex;
     justify-content: center;
@@ -966,6 +966,11 @@ h1 {
         background-size: contain;
         background-repeat: no-repeat;
     }
+    .scorecount,
+    .timercount {
+        margin-left: 8vw;
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -983,7 +988,7 @@ h1 {
     .scorecount,
     .timercount {
         left: 10vw;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .timercount {
         top: 3vh;
@@ -1000,6 +1005,6 @@ h1 {
         font-size: 2rem;
     }
     .speaker {
-        top: 30vh;
+        top: 34vh;
     }
 }

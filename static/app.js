@@ -78,9 +78,14 @@ function startGame() {
     createBug()
     leftHalf.addEventListener('click', turnLeft)
     rightHalf.addEventListener('click', turnRight)
+    if (p.gameInProgress && song.paused || !song.paused) {
+        return
+    }
+    music()
 }
 
 function endGame() {
+    p.gameInProgress = true
     const highScore = localStorage.getItem('highScore') || 0
     let newRecord = false
     if (score > highScore) {
