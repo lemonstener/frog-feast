@@ -190,7 +190,7 @@ h1 {
     height: 5vh;
     position: absolute;
     margin-left: 6vw;
-    text-align: center;
+    text-align: right;
     font-size: 2.5rem;
     font-family: 'Permanent Marker', cursive;
     font: 900;
@@ -821,7 +821,7 @@ h1 {
     width: 30vw;
     height: 60vh;
     z-index: 5;
-    background-color: RGBA(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .8);
     border-radius: 8px;
     position: absolute;
     margin-left: 35vw;
@@ -829,6 +829,7 @@ h1 {
     text-align: center;
     font-size: 1.5rem;
     display: flex;
+    color: black;
     flex-direction: column;
     justify-content: center;
     font-family: 'Rampart One', cursive;

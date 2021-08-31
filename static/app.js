@@ -132,6 +132,7 @@ function endGame() {
         gameOverPanel.remove()
         container.hidden = true
         if (!song.paused) { music() }
+        p.gameInProgress = false
         showLandingPage()
     })
 
