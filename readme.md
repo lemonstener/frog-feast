@@ -4,7 +4,7 @@
   - [Overview](#overview)
   - [Features](#features)
   - [Technologies used](#technologies-used)
-  - [How to use](#how-to-use)
+  - [Local Deployment](#local-deployment)
   - [Mechanis](#mechanics)
     - [Controls](#controls)
     - [The Bugs](#the-bugs)
@@ -32,9 +32,9 @@ Music by [Bensound](https://www.bensound.com/royalty-free-music/2)
 
 No fancy frameworks or libraries used, just plain CSS and Javascript.
 
-## How to use
+## Local Deployment
 
-Not much to it as to how to use it. Simply clone the repo onto your machine and open **index.html**. 
+Since there are no libraries or frameworks involved the app does not require installing or setting anything up. Simply clone the repo in a folder on your computer, navigate to that folder and open **index.html**. 
 
 ### Controls
 
