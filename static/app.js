@@ -148,12 +148,12 @@ function showLandingPage() {
             <h1>FROG FEAST</h1>
             <h3><i>A.K.A the "What if the ATARI 2600 had 16bit graphics" game</i></h2>
             <p>Welcome to Frog Feast ! Eat some bugs, get a high score and then do it all over again!<br> Watch out for bees though! Eat 3 bees and it's game over! <br> Oh yeah, you have a time limit too. <br> Press
-                <span style="color:blue">left</span> or
-                <span style="color:blue">right</span> on the keyboard to stick your tongue out in that direction (or tap the screen on mobile).<br> Press the <span style="color:blue">spacebar</span> to toggle the music on / off (or click on the
+                <span style="background-color: black; padding: 1px; border-radius: 5px; color:white">left</span> or
+                <span style="background-color: black; padding: 1px; border-radius: 5px; color:white">right</span> on the keyboard to stick your tongue out in that direction (or tap the screen on mobile).<br> Press the <span style="background-color: black; padding: 1px; border-radius: 5px; color:white">spacebar</span> to toggle the music on / off (or click on the
                 <span
-                    style="color:orange">speaker</span>).
+                    style="background-color: black; padding: 1px; border-radius: 5px; color:white">speaker</span>).
                     <br>
-                    <span style="color:red">Flies</span> will get you 100 points, <span style="color:purple">Fluffly bugs</span> are worth 1000 and extend your timer but the <span style="color:gold">Bees</span> will hurt you.</p>
+                    <span style="background-color: black; padding: 1px; border-radius: 5px; color:red">Flies</span> will get you 100 points, <span style="background-color: black; padding: 1px; border-radius: 5px; color:pink">Fluffly bugs</span> are worth 1000 and extend your timer but the <span style="background-color: black; padding: 1px; border-radius: 5px; color:gold">Bees</span> will hurt you.</p>
                     <a href="https://www.bensound.com/royalty-free-music/2">Music by Bensound</a>
         </div>
 
@@ -163,11 +163,11 @@ function showLandingPage() {
             <div class="rdemo-frog"></div>
         </div>
         <div class="enemies">
-            <div style="margin-top:20px"><span style="color:red;">Fly</span></div>
+            <div style="margin-top:20px"><span style="background-color: black; padding: 1px; border-radius: 5px; color:red;">Fly</span></div>
             <div class="demo-fly"></div>
-            <div style="margin-top:20px"><span style="color:gold">Bee</span></div>
+            <div style="margin-top:20px"><span style="background-color: black; padding: 1px; border-radius: 5px; color:gold">Bee</span></div>
             <div class="demo-bee"></div>
-            <div style="margin-top:20px"><span style="color:purple">Fluffy Bug</span></div>
+            <div style="margin-top:20px"><span style="background-color: black; padding: 1px; border-radius: 5px; color:pink">Fluffy Bug</span></div>
             <div class="demo-puffer"></div>
         </div>
 

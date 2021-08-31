@@ -61,7 +61,7 @@ function getHurt() {
                 frog.className = `${p.direction}frog1`
             }
         }
-    }, 20)
+    }, 30)
 }
 
 function turnLeft() {

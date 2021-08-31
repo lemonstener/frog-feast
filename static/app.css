@@ -14,7 +14,7 @@ h1 {
 
 .landing-page {
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'STIX Two Math', serif;
     top: 0;
     left: 0;
     display: flex;
@@ -832,14 +832,15 @@ h1 {
     color: black;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Rampart One', cursive;
     transition: margin-top 1s;
+    font-family: "Rampart One", cursive;
 }
 
 .reset-btn {
     font-size: 6rem;
     cursor: pointer;
     color: green;
+    margin-top: 1vh;
 }
 
 .back-btn {
@@ -851,6 +852,7 @@ h1 {
     background-size: contain;
     margin-left: 37.5%;
     cursor: pointer;
+    margin-bottom: 1vh;
 }
 
 
