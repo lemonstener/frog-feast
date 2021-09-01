@@ -24,16 +24,16 @@ function stickTongue() {
                     clearInterval(pullInterval)
                     checkCaught(hitbox)
                 }
-            }, 10)
+            }, 15)
         }
-    }, 10)
+    }, 15)
 
     setTimeout(function() {
         p.canPlay = true
         p.stickingOutRight = false
         p.stickingOutLeft = false
         frog.className = `${p.direction}frog1`
-    }, 250)
+    }, 300)
 }
 
 function getHurt() {

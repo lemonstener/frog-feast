@@ -16,7 +16,7 @@ const e = {
         },
         bugActive: false
     },
-    speed: [10, 15, 15, 20, 20, 20, 20, 25, 30, 40]
+    speed: [15, 20, 20, 20, 25, 25, 25, 30]
 }
 
 function createBug() {
