@@ -70,7 +70,6 @@ Or you can alternatively click the general right direction on the screen (or tap
 
 ### Issues
 
- - On mobile, if you tap the screen too fast the app cannot keep up and the frog will start glitching.
  - On very rare occassions eating a bee will only decrease your score but not hurt you. Consider this my generosity to you.
 
 ### About me
