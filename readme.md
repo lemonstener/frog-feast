@@ -4,7 +4,7 @@
   - [Overview](#overview)
   - [Features](#features)
   - [Technologies used](#technologies-used)
-  - [How to use](#how-to-use)
+  - [Local Deployment](#local-deployment)
   - [Mechanis](#mechanics)
     - [Controls](#controls)
     - [The Bugs](#the-bugs)
