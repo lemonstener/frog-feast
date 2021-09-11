@@ -1,5 +1,7 @@
 # FROG FEAST
 
+![Screenshot]('https://github.com/lemonstener/frog-feast/blob/master/thumb.png')
+
 ## Table of Contents
   - [Overview](#overview)
   - [Features](#features)
