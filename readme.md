@@ -15,6 +15,8 @@
 
 ## UPDATE
 
+![Mintbean star](https://hire.mintbean.io/_next/image?url=%2Fcomet.gif&w=2048&q=75)
+
 Frog Feast earned the Mintbean Star Award for "exemplary achievement in the field of web development". Yay! 
 
 [You can check it out at hire.mintbean.io and searching me by name](https://hire.mintbean.io/)
