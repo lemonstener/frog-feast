@@ -1,5 +1,7 @@
 # FROG FEAST
 
+![Screenshot](https://github.com/lemonstener/frog-feast/blob/master/thumb.png)
+
 ## Table of Contents
   - [Overview](#overview)
   - [Features](#features)
@@ -10,6 +12,14 @@
     - [The Bugs](#the-bugs)
   - [Issues](#issues)
   - [About Me](#about-me)
+
+## UPDATE
+
+![Mintbean star](https://camo.githubusercontent.com/f4c6557f862cd18f3944f261f31872b66600a6df21131dca8a19bc375bfb85c9/68747470733a2f2f686972652e6d696e746265616e2e696f2f5f6e6578742f696d6167653f75726c3d253246636f6d65742e67696626773d3230343826713d3735)
+
+Frog Feast earned the Mintbean Star Award for "exemplary achievement in the field of web development". Yay! 
+
+[You can check it out at hire.mintbean.io and searching me by name](https://hire.mintbean.io/)
 
 ## Overview
 
