@@ -13,11 +13,11 @@
   - [Issues](#issues)
   - [About Me](#about-me)
 
-## UPDATE!!!
+## UPDATE
 
 Frog Feast earned the Mintbean Star Award for "exemplary achievement in the field of web development". Yay! 
 
-[You can check it out at hire.mintbean.io](https://hire.mintbean.io/)
+[You can check it out at hire.mintbean.io and searching me by name](https://hire.mintbean.io/)
 
 ## Overview
 
