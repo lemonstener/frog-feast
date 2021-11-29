@@ -1,868 +1,859 @@
 /* LANDING PAGE */
 
 .background {
-    background: url('../images/rocks.gif') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url("../images/rocks.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
-    color: gold;
+  color: gold;
 }
 
 .landing-page {
-    text-align: center;
-    font-family: 'STIX Two Math', serif;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
+  text-align: center;
+  font-family: "STIX Two Math", serif;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .controls,
 .enemies {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .demo-speaker {
-    width: 7vw;
-    height: 7vh;
-    background-image: url('../images/speaker.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 7vw;
+  height: 7vh;
+  background-image: url("../images/speaker.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .ldemo-frog,
 .rdemo-frog {
-    width: 10vw;
-    height: 10vh;
-    right: 42.5vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  right: 42.5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .ldemo-frog {
-    background-image: url('../images/l6.png');
+  background-image: url("../images/l6.png");
 }
 
 .rdemo-frog {
-    background-image: url('../images/r6.png');
+  background-image: url("../images/r6.png");
 }
 
 .demo-fly,
 .demo-bee,
 .demo-puffer {
-    width: 10vw;
-    height: 10vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .demo-fly {
-    background-image: url('../images/lfly1.png');
+  background-image: url("../images/lfly1.png");
 }
 
 .demo-bee {
-    background-image: url('../images/lbee1.png');
+  background-image: url("../images/lbee1.png");
 }
 
 .demo-puffer {
-    background-image: url('../images/lpuffer1.png');
+  background-image: url("../images/lpuffer1.png");
 }
 
 .container {
-    background-image: url('../images/wallpaper.gif');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
+  background-image: url("../images/wallpaper.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .about {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .start {
-    background-image: url('../images/start.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20vw;
-    height: 20vh;
-    cursor: pointer;
-    margin-left: 40vw;
+  background-image: url("../images/start.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: 20vh;
+  cursor: pointer;
+  margin-left: 40vw;
 }
 
 .about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 5vh;
-    margin-left: 25vw;
-    background-color: RGBA(255, 255, 255, .9);
-    border: 2px solid black;
-    border-radius: 10px;
-    text-align: center;
-    width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5vh;
+  margin-left: 25vw;
+  background-color: RGBA(255, 255, 255, 0.9);
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 50vw;
 }
 
 .profile {
-    background-image: url('../images/me.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 300px;
-    margin: 5px;
+  background-image: url("../images/me.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 300px;
+  margin: 5px;
 }
 
 .info {
-    width: 50%;
+  width: 50%;
 }
 
 .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .linkedin,
 .github {
-    width: 5vw;
-    height: 5vh;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .linkedin {
-    background-image: url('../images/linkedin.png');
+  background-image: url("../images/linkedin.png");
 }
 
 .github {
-    background-image: url('../images/github.png');
+  background-image: url("../images/github.png");
 }
 
 .mob-links {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 
 /* MOBILE SUPPORT HITBOXES */
 
 .left-screen,
 .right-screen {
-    width: 50vw;
-    height: 100%;
-    z-index: 3;
+  width: 50vw;
+  height: 100%;
+  z-index: 3;
 }
 
 .left-screen {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }
 
 .right-screen {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
-
 
 /* UI */
 
 .timercount,
 .scorecount {
-    width: 5vw;
-    height: 5vh;
-    position: absolute;
-    margin-left: 6vw;
-    text-align: right;
-    font-size: 2.5rem;
-    font-family: 'Permanent Marker', cursive;
-    font: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: gold;
+  width: 5vw;
+  height: 5vh;
+  position: absolute;
+  margin-left: 6vw;
+  text-align: right;
+  font-size: 2.5rem;
+  font-family: "Permanent Marker", cursive;
+  font: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
 }
 
 .timercount {
-    top: 1vh;
+  top: 1vh;
 }
 
 .scorecount {
-    top: 7vh;
+  top: 7vh;
 }
 
 .timericon,
 .scoreicon {
-    width: 5vw;
-    height: 5vh;
-    left: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 0;
-    margin: 10px;
+  width: 5vw;
+  height: 5vh;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  margin: 10px;
 }
 
 .timericon {
-    background-image: url('../images/clock.png');
+  background-image: url("../images/clock.png");
 }
 
 .scoreicon {
-    background-image: url('../images/lfly1.png');
+  background-image: url("../images/lfly1.png");
 }
 
 .heartfield {
-    width: 30vw;
-    height: 10vh;
-    position: absolute;
-    left: 35vw;
-    display: flex;
-    flex-direction: row;
+  width: 30vw;
+  height: 10vh;
+  position: absolute;
+  left: 35vw;
+  display: flex;
+  flex-direction: row;
 }
 
 .heart {
-    width: 33%;
-    height: 100%;
-    background-image: url('../images/heart.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 33%;
+  height: 100%;
+  background-image: url("../images/heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .speaker {
-    width: 10vw;
-    height: 10vh;
-    position: absolute;
-    bottom: 5vh;
-    left: 45vw;
-    background-image: url('../images/speaker.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    filter: grayscale(1);
-    z-index: 10;
-    cursor: pointer;
+  width: 10vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 45vw;
+  background-image: url("../images/speaker.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  z-index: 10;
+  cursor: pointer;
 }
-
 
 /* FROG FRAMES */
 
 #frog {
-    z-index: 1;
-    bottom: 30vh;
-    position: absolute;
+  z-index: 1;
+  bottom: 30vh;
+  position: absolute;
 }
 
 .lfrog1 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/l1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/l1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfrog2 {
-    width: 16vw;
-    height: 16vh;
-    right: 42.5vw;
-    background-image: url('../images/l2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 16vw;
+  height: 16vh;
+  right: 42.5vw;
+  background-image: url("../images/l2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfrog3 {
-    width: 18vw;
-    height: 20vh;
-    right: 42.5vw;
-    background-image: url('../images/l3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 18vw;
+  height: 20vh;
+  right: 42.5vw;
+  background-image: url("../images/l3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfrog4 {
-    width: 19vw;
-    height: 19vh;
-    right: 42.5vw;
-    background-image: url('../images/l4.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 19vw;
+  height: 19vh;
+  right: 42.5vw;
+  background-image: url("../images/l4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfrog5 {
-    width: 24vw;
-    height: 24vh;
-    right: 42.5vw;
-    background-image: url('../images/l5.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 24vw;
+  height: 24vh;
+  right: 42.5vw;
+  background-image: url("../images/l5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfrog6 {
-    width: 26vw;
-    height: 26vh;
-    right: 42.5vw;
-    background-image: url('../images/l6.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 26vw;
+  height: 26vh;
+  right: 42.5vw;
+  background-image: url("../images/l6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfrog7 {
-    width: 26vw;
-    height: 26vh;
-    right: 42.5vw;
-    background-image: url('../images/l6.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 26vw;
+  height: 26vh;
+  right: 42.5vw;
+  background-image: url("../images/l6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfrog1 {
-    width: 15vw;
-    height: 15vh;
-    left: 42.5vw;
-    background-image: url('../images/r1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  left: 42.5vw;
+  background-image: url("../images/r1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfrog2 {
-    width: 16vw;
-    height: 16vh;
-    left: 42.5vw;
-    background-image: url('../images/r2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 16vw;
+  height: 16vh;
+  left: 42.5vw;
+  background-image: url("../images/r2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfrog3 {
-    width: 18vw;
-    height: 20vh;
-    left: 42.5vw;
-    background-image: url('../images/r3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 18vw;
+  height: 20vh;
+  left: 42.5vw;
+  background-image: url("../images/r3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfrog4 {
-    width: 19vw;
-    height: 19vh;
-    left: 42.5vw;
-    background-image: url('../images/r4.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 19vw;
+  height: 19vh;
+  left: 42.5vw;
+  background-image: url("../images/r4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfrog5 {
-    width: 24vw;
-    height: 24vh;
-    left: 42.5vw;
-    background-image: url('../images/r5.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 24vw;
+  height: 24vh;
+  left: 42.5vw;
+  background-image: url("../images/r5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfrog6 {
-    width: 26vw;
-    height: 26vh;
-    left: 42.5vw;
-    background-image: url('../images/r6.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 26vw;
+  height: 26vh;
+  left: 42.5vw;
+  background-image: url("../images/r6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfrog7 {
-    width: 26vw;
-    height: 26vh;
-    left: 42.5vw;
-    background-image: url('../images/r6.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 26vw;
+  height: 26vh;
+  left: 42.5vw;
+  background-image: url("../images/r6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
 
 /* FROG DAMAGE FRAMES */
 
 .lh1 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/lh1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/lh1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lh2 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/lh2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/lh2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lh3 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/lh3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/lh3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lh4 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/lh4.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/lh4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lh5 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/lh5.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/lh5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lh6 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/lh6.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/lh6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rh1 {
-    width: 15vw;
-    height: 15vh;
-    left: 42.5vw;
-    background-image: url('../images/rh1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  left: 42.5vw;
+  background-image: url("../images/rh1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rh2 {
-    width: 15vw;
-    height: 15vh;
-    left: 42.5vw;
-    background-image: url('../images/rh2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  left: 42.5vw;
+  background-image: url("../images/rh2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rh3 {
-    width: 15vw;
-    height: 15vh;
-    left: 42.5vw;
-    background-image: url('../images/rh3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  left: 42.5vw;
+  background-image: url("../images/rh3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rh4 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/rh4.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/rh4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rh5 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/rh5.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/rh5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rh6 {
-    width: 15vw;
-    height: 15vh;
-    right: 42.5vw;
-    background-image: url('../images/rh6.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 15vw;
+  height: 15vh;
+  right: 42.5vw;
+  background-image: url("../images/rh6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
 
 /* BUGS */
 
 #bug {
-    position: absolute;
-    z-index: 2;
-    width: 15vw;
+  position: absolute;
+  z-index: 2;
+  width: 15vw;
 }
 
 .lfly1 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    background-image: url('../images/lfly1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  background-image: url("../images/lfly1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfly2 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lfly2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lfly2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfly3 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lfly3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lfly3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lfly4 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lfly3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lfly3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfly1 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    background-image: url('../images/rfly1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  background-image: url("../images/rfly1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfly2 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rfly2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rfly2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfly3 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rfly3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rfly3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rfly4 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rfly3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rfly3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lbee1 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    background-image: url('../images/lbee1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  background-image: url("../images/lbee1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lbee2 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lbee2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lbee2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lbee3 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lbee3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lbee3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lbee4 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lbee3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lbee3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rbee1 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    background-image: url('../images/rbee1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  background-image: url("../images/rbee1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rbee2 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rbee2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rbee2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rbee3 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rbee3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rbee3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rbee4 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rbee3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rbee3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lpuffer1 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    background-image: url('../images/lpuffer1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  background-image: url("../images/lpuffer1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lpuffer2 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lpuffer2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lpuffer2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lpuffer3 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lpuffer3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lpuffer3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .lpuffer4 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/lpuffer3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/lpuffer3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rpuffer1 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    background-image: url('../images/rpuffer1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  background-image: url("../images/rpuffer1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rpuffer2 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rpuffer2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rpuffer2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rpuffer3 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rpuffer3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rpuffer3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .rpuffer4 {
-    width: 10vw;
-    height: 10vh;
-    bottom: 34vh;
-    position: absolute;
-    background-image: url('../images/rpuffer3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 10vw;
+  height: 10vh;
+  bottom: 34vh;
+  position: absolute;
+  background-image: url("../images/rpuffer3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
 
 /* SCORE ANIMATION */
 
 .result {
-    position: absolute;
-    bottom: 52vh;
-    left: 46vw;
-    width: 3vw;
-    height: 3vh;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Rampart One', cursive;
+  position: absolute;
+  bottom: 52vh;
+  left: 46vw;
+  width: 3vw;
+  height: 3vh;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Rampart One", cursive;
 }
-
 
 /* GAME OVER SCREEN */
 
 .game-over {
-    width: 30vw;
-    height: 60vh;
-    z-index: 5;
-    background-color: rgba(255, 255, 255, .8);
-    border-radius: 8px;
-    position: absolute;
-    margin-left: 35vw;
-    margin-top: 200vh;
-    text-align: center;
-    font-size: 1.5rem;
-    display: flex;
-    color: black;
-    flex-direction: column;
-    justify-content: center;
-    transition: margin-top 1s;
-    font-family: "Rampart One", cursive;
+  width: 30vw;
+  height: 60vh;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  position: absolute;
+  margin-left: 35vw;
+  margin-top: 200vh;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  justify-content: center;
+  transition: margin-top 1s;
+  font-family: "Rampart One", cursive;
 }
 
 .reset-btn {
-    font-size: 6rem;
-    cursor: pointer;
-    color: green;
-    margin-top: 1vh;
+  font-size: 6rem;
+  cursor: pointer;
+  color: green;
+  margin-top: 1vh;
 }
 
 .back-btn {
-    width: 25%;
-    height: 5vh;
-    background-image: url('../images/backbtn.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 37.5%;
-    cursor: pointer;
-    margin-bottom: 1vh;
+  width: 25%;
+  height: 5vh;
+  background-image: url("../images/backbtn.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 37.5%;
+  cursor: pointer;
+  margin-bottom: 1vh;
 }
-
 
 /* PULSATE ANIMATION, CREDIT TO ANIMISTA  */
 
 .heartbeat {
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
-
 
 /* ----------------------------------------------
  * Generated by Animista on 2021-8-29 12:46:10
@@ -871,7 +862,6 @@ h1 {
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-
 /**
  * ----------------------------------------
  * animation heartbeat
@@ -879,135 +869,134 @@ h1 {
  */
 
 @-webkit-keyframes heartbeat {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    10% {
-        -webkit-transform: scale(0.91);
-        transform: scale(0.91);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    17% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    33% {
-        -webkit-transform: scale(0.87);
-        transform: scale(0.87);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    45% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
 
 @keyframes heartbeat {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    10% {
-        -webkit-transform: scale(0.91);
-        transform: scale(0.91);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    17% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    33% {
-        -webkit-transform: scale(0.87);
-        transform: scale(0.87);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    45% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
-
 
 /* MEDIA QUERRIES */
 
 @media only screen and (max-width: 400px) {
-    .about {
-        display: none;
-    }
-    .mob-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        visibility: visible;
-    }
-    .linkedin,
-    .github {
-        width: 10vw;
-        height: 10vh;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .scorecount,
-    .timercount {
-        margin-left: 8vw;
-        font-size: 1.4rem;
-    }
+  .about {
+    display: none;
+  }
+  .mob-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    visibility: visible;
+  }
+  .linkedin,
+  .github {
+    width: 10vw;
+    height: 10vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .scorecount,
+  .timercount {
+    margin-left: 8vw;
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-    #frog {
-        bottom: 28vh;
-    }
-    #bug {
-        bottom: 32vh;
-    }
-    .scoreicon,
-    .timericon {
-        width: 8vw;
-        height: 8vh;
-    }
-    .scorecount,
-    .timercount {
-        left: 10vw;
-        font-size: 1.8rem;
-    }
-    .timercount {
-        top: 3vh;
-    }
-    .scorecount {
-        top: 12vh;
-    }
-    .game-over {
-        width: 40vw;
-        font-size: 1rem;
-        right: 30vw;
-    }
-    .reset-btn {
-        font-size: 2rem;
-    }
-    .speaker {
-        top: 34vh;
-    }
+  #frog {
+    bottom: 28vh;
+  }
+  #bug {
+    bottom: 32vh;
+  }
+  .scoreicon,
+  .timericon {
+    width: 8vw;
+    height: 8vh;
+  }
+  .scorecount,
+  .timercount {
+    left: 10vw;
+    font-size: 1.8rem;
+  }
+  .timercount {
+    top: 3vh;
+  }
+  .scorecount {
+    top: 12vh;
+  }
+  .game-over {
+    width: 40vw;
+    font-size: 1rem;
+    right: 30vw;
+  }
+  .reset-btn {
+    font-size: 2rem;
+  }
+  .speaker {
+    top: 34vh;
+  }
 }
